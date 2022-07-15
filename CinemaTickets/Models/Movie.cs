@@ -8,9 +8,13 @@ namespace CinemaTickets.Models
     {
         [Key]
         public int Id { get; set; }
+        [Display(Name = "Movie Name")]
         public string Name { get; set; }
+        [Display(Name = "Description")]
         public string Description { get; set; }
+        [Display(Name = "Price")]
         public double Price { get; set; }
+        [Display(Name = "Poster")]
         public string PosterImage { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
